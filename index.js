@@ -31,7 +31,7 @@ app.post('/webhook', (req, res) => {
     // Returns a '200 OK' response to all requests
     res.status(200).send('EVENT_RECEIVED');
   } else {
-    // Returns a '404 Not Found' if event is not from a page subscription
+    // Returns a '404 Not Found' if event is not from a page subscriptions
     res.sendStatus(404);
   }
 
